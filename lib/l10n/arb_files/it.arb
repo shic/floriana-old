@@ -1,0 +1,148 @@
+{
+  "@@locale": "it",
+  "@_GENERIC_STRINGS": {},
+  "ok": "Ok",
+  "confirm": "Conferma",
+  "home": "Home",
+  "create": "Crea",
+  "show": "Mostra",
+  "unknown": "Sconosciuto",
+  "hide": "Nascondi",
+  "required": "Richiesto",
+  "confirmChanges": "Conferma i cambiamenti",
+  "website": "Sito web",
+  "websiteErrorNotValid": "Questo sito non è valido",
+  "description": "Descrizione",
+  "images": "Immagini",
+  "nameInvalidStart": "Il nome può iniziare con una lettera, un numero o _",
+  "nameInvalidEnd": "Il nome può finire con una lettera, un numero o _",
+  "navigateAsUser": "Naviga come utente",
+  "navigateAsManager": "Naviga come manager",
+  "error": "Errore",
+  "loading": "Caricamento",
+  "empty": "Nessun elemento trovato",
+  "userDoesNotExist": "Le credenziali inserite non sono corrette",
+  "userAlreadyExists": "Un utente con questa email già esiste",
+  "somethingUnexpectedHappened": "È accaduto qualcosa di inaspettato",
+  "@_LOGIN_STRINGS": {},
+  "login": "Accedi",
+  "email": "Email",
+  "invalidEmail": "Email non valida",
+  "password": "Password",
+  "passwordError6Chars": "La password dev'essere lunga almeno 6 caratteri",
+  "passwordErrorWhitespaces": "La password non deve contenere spazi",
+  "repeatPassword": "Ripeti password",
+  "repeatPasswordErrorDoesNotMatch": "Le 2 password inserite non corrispondono",
+  "@_PROFILE_STRINGS": {},
+  "dontHaveAnAccount": "Non hai un account?",
+  "alreadyHaveAnAccount": "Hai già un account?",
+  "signup": "Registrati",
+  "login": "Accedi",
+  "displayName": "Nome",
+  "avatar": "Avatar",
+  "logo": "Logo",
+  "profile": "Profilo",
+  "changePassword": "Cambia password",
+  "profileUpdated": "Profilo aggiornato",
+  "@_AUTHOR_MANAGEMENT": {},
+  "author": "Autore",
+  "authors": "Autori",
+  "authorSelect": "Seleziona authore",
+  "visibilitySelect": "Seleziona visibilità",
+  "authorName": "Nome dell'autore",
+  "authorURL": "URL dell'autore",
+  "authorURLMissing": "Manca l'URL dell'autore",
+  "noAuthorsAdded": "Non è ancora stato aggiunto nessun autore",
+  "@_FAVORITES": {},
+  "favorites": "Preferiti",
+  "@_MONUMENTS": {},
+  "monument": "Monumento",
+  "monuments": "Monumenti",
+  "@_ARTWORK_MANAGEMENT": {},
+  "artwork": "Opera d'arte",
+  "artworks": "Opere d'arte",
+  "noArtworkAdded": "Nessuna opera d'arte",
+  "artworkName": "Nome dell'opera",
+  "openSeaURL": "URL di OpenSea",
+  "material": "Materiale",
+  "sizeInCentimeters": "Dimensioni (in centimetri)",
+  "height": "Altezza",
+  "width": "Larghezza",
+  "depth": "Profondità",
+  "date": "Data",
+  "creationPlace": "Posto di realizzazione",
+  "creationYear": "Anno di realizzazione",
+  "notVisible": "Non visibile",
+  "visible": "Visibile",
+  "costInEur": "Prezzo in euro",
+  "select": "Seleziona",
+  "imageSelect": "Seleziona immagine",
+  "rangeSelect": "Seleziona intervallo",
+  "artworkSelect": "Seleziona opera d'arte",
+  "imagesNotSet": "Non ci sono immagini impostate",
+  "authorNotSet": "Non è stato impostato un autore",
+  "@_EXHIBITION_MANAGEMENT": {},
+  "exhibitionName": "Nome della mostra",
+  "address": "Indirizzo",
+  "showMore": "Mostra di più",
+  "phoneNumber": "Numero di telefono",
+  "exhibition": "Mostra",
+  "exhibitions": "Mostre",
+  "cost": "Costo",
+  "costInMoney": "{money, plural, =0{Gratis}other{{money}}}",
+  "@costInMoney": {
+    "placeholders": {
+      "money": {
+        "example": "0",
+        "type": "double",
+        "format": "currency"
+      }
+    }
+  },
+  "fromToYMMMMEEEEd": "Da {start} a {end}",
+  "@fromToYMMMMEEEEd": {
+    "placeholders": {
+      "start": {
+        "type": "DateTime",
+        "format": "yMMMMEEEEd"
+      },
+      "end": {
+        "type": "DateTime",
+        "format": "yMMMMEEEEd"
+      }
+    }
+  },
+  "fromToMMMMd": "{start} - {end}",
+  "@fromToMMMMd": {
+    "placeholders": {
+      "start": {
+        "type": "DateTime",
+        "format": "MMMMd"
+      },
+      "end": {
+        "type": "DateTime",
+        "format": "MMMMd"
+      }
+    }
+  },
+  "organizedBy": "Organizzato da {org}",
+  "@organizedBy": {
+    "type": "text",
+    "placeholders": {
+      "org": {
+        "type": "String",
+        "example": "Organizer"
+      }
+    }
+  },
+  "selected": "Selezionati: {number}",
+  "@selected": {
+    "type": "text",
+    "placeholders": {
+      "number": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  }
+}

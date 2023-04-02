@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/path_provider_android/intermediates/merged_res/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/path_provider_android/intermediates/merged_res/release/layout/notification_template_part_time.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/path_provider_android/intermediates/merged_res/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/path_provider_android/intermediates/merged_res/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/path_provider_android/intermediates/merged_res/release/layout/custom_dialog.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/path_provider_android/intermediates/merged_res/release/layout/notification_action.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/layout/notification_action.xml"
+    }
+]

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1097684788961",
+    "project_id": "clt-play-dev",
+    "storage_bucket": "clt-play-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097684788961:android:9d8c9f01a378691961b9a0",
+        "android_client_info": {
+          "package_name": "it.www.circololavoratoriterni.cltplay.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097684788961-egb9t53qkdmo8tv9ucspe9ugcu61if2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd1lyAukCk41_1uPCPRzSFzQjFCkyiP98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097684788961-egb9t53qkdmo8tv9ucspe9ugcu61if2p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1097684788961-utepu1snvobmd3qelhg0k3a0tt9hpctp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "it.www.circololavoratoriterni.cltplay.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

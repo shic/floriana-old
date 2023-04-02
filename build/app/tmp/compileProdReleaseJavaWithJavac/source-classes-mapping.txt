@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+it/www/circololavoratoriterni/cltplay/BuildConfig.java
+ it.www.circololavoratoriterni.cltplay.BuildConfig

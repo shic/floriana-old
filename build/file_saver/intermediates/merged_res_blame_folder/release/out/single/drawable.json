@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/file_saver/intermediates/merged_res/release/drawable/notification_bg.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/file_saver/intermediates/merged_res/release/drawable/notification_bg_low.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/file_saver/intermediates/merged_res/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/shi/Documents/workspaceMyguide/myguide/build/file_saver/intermediates/merged_res/release/drawable/notification_icon_background.xml",
+        "source": "/Users/shi/.gradle/caches/transforms-3/5d8c7b02fd4b549cd17e5c4ec806f1d1/transformed/core-1.6.0/res/drawable/notification_icon_background.xml"
+    }
+]

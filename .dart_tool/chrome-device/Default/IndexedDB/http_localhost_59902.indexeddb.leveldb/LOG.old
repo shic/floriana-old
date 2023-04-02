@@ -1,0 +1,24 @@
+2022/12/17-00:15:18.646 2631b Reusing MANIFEST /private/var/folders/y1/jxp1hdbs0s96_5q1f8qpvc0h0000gn/T/flutter_tools.g9e1oV/flutter_tools_chrome_device.SN5JGm/Default/IndexedDB/http_localhost_59902.indexeddb.leveldb/MANIFEST-000001
+2022/12/17-00:15:18.647 2631b Recovering log #13
+2022/12/17-00:15:18.647 2631b Reusing old log /private/var/folders/y1/jxp1hdbs0s96_5q1f8qpvc0h0000gn/T/flutter_tools.g9e1oV/flutter_tools_chrome_device.SN5JGm/Default/IndexedDB/http_localhost_59902.indexeddb.leveldb/000013.log 
+2022/12/17-00:15:18.743 b747 Level-0 table #17: started
+2022/12/17-00:15:18.780 b747 Level-0 table #17: 3023 bytes OK
+2022/12/17-00:15:18.854 b747 Delete type=0 #13
+2022/12/17-00:15:18.855 b747 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 291 : 1
+2022/12/17-00:15:18.855 b747 Compacting 1@0 + 1@1 files
+2022/12/17-00:15:18.874 b747 Generated table #18@0: 32 keys, 2498 bytes
+2022/12/17-00:15:18.875 b747 Compacted 1@0 + 1@1 files => 2498 bytes
+2022/12/17-00:15:18.914 b747 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/17-00:15:18.915 b747 Delete type=2 #17
+2022/12/17-00:15:18.915 b747 Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 291 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/12/17-00:15:25.297 10d1b Level-0 table #20: started
+2022/12/17-00:15:25.338 10d1b Level-0 table #20: 3006 bytes OK
+2022/12/17-00:15:25.410 10d1b Delete type=0 #16
+2022/12/17-00:15:25.410 10d1b Delete type=2 #14
+2022/12/17-00:15:25.411 10d1b Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 336 : 1
+2022/12/17-00:15:25.411 10d1b Compacting 1@0 + 1@1 files
+2022/12/17-00:15:25.446 10d1b Generated table #21@0: 39 keys, 2567 bytes
+2022/12/17-00:15:25.446 10d1b Compacted 1@0 + 1@1 files => 2567 bytes
+2022/12/17-00:15:25.499 10d1b compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/17-00:15:25.500 10d1b Delete type=2 #20
+2022/12/17-00:15:25.500 10d1b Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 336 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
