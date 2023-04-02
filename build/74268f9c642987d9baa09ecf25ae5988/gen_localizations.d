@@ -1,0 +1,1 @@
+ /Users/shi/Documents/workspace/floriana/.dart_tool/flutter_gen/gen_l10n/app_localizations_it.dart /Users/shi/Documents/workspace/floriana/.dart_tool/flutter_gen/gen_l10n/app_localizations.dart:  /Users/shi/Documents/workspace/floriana/l10n.yaml /Users/shi/Documents/workspace/floriana/lib/l10n/arb_files/it.arb
