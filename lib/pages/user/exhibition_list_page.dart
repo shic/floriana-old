@@ -33,13 +33,34 @@ class ExhibitionListPage extends ConsumerWidget {
                   ),
             ),
         dataBuilder: (_, exhibitions) {
+          Map<int, List<String>> dataByProvider = {
+            1: ['1', '2', '3']
+          };
+          Exhibition exhibition = Exhibition(
+            id: "1",
+            managerId: "1",
+            name: "ex name",
+            description: "ex description",
+            status: ExhibitionStatus.visible,
+            address: "address",
+            dateRange:
+                DateTimeRange(start: DateTime(2010), end: DateTime(2011)),
+            unavailableDates: [],
+            workingHours: dataByProvider,
+            artworkIds: ["artworkIds"],
+            likes: 100,
+              imageURL:"/",
+          );
+          final List<Exhibition> exhibitionList = [];
+
+          exhibitionList.add(exhibition);
           final ordered = exhibitions.sorted(
             (e1, e2) => e1.dateRange.start.compareTo(e1.dateRange.end),
           );
           return [
             SliverList(
               delegate: ExhibitionsChildBuilderDelegate(
-                exhibitions: ordered,
+                exhibitions: exhibitionList,
                 itemBuilder: (exhibition) {
                   return ExhibitionItem(
                     exhibition: exhibition,

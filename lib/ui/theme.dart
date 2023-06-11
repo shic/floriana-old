@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myguide/ui/responsive_widget.dart';
 import 'package:myguide/ui/spacers.dart';
 
@@ -38,7 +37,7 @@ extension GreyColors on ColorScheme {
 
 class ApplicationTheme {
   static TextTheme _generateTextTheme(ColorScheme scheme) {
-    return GoogleFonts.montserratTextTheme(
+    return
       TextTheme(
         displayLarge: TextStyle(
           fontSize: 64,
@@ -106,7 +105,7 @@ class ApplicationTheme {
           letterSpacing: 0,
           color: scheme.onBackground,
         ),
-      ),
+
     );
   }
 

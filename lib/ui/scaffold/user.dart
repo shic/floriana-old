@@ -10,9 +10,10 @@ import 'package:myguide/ui/scaffold/menu.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 enum UserScaffoldTab {
+  favorites(user.FavoriteListRoute.rawPath),
+  home(user.HomeRoute.rawPath),
   exhibitions(user.ExhibitionListRoute.rawPath),
   monuments(user.MonumentListRoute.rawPath),
-  favorites(user.FavoriteListRoute.rawPath),
   profile(user.ProfileRoute.rawPath);
 
   const UserScaffoldTab(this.path);
@@ -31,12 +32,14 @@ enum UserScaffoldTab {
 
   String title(AppLocalizations copy) {
     switch (this) {
-      case UserScaffoldTab.exhibitions:
+      case UserScaffoldTab.home:
+        return copy.home;
+        case UserScaffoldTab.exhibitions:
         return copy.exhibitions;
       case UserScaffoldTab.monuments:
         return copy.monuments;
       case UserScaffoldTab.favorites:
-        return copy.favorites;
+        return copy.home;
       case UserScaffoldTab.profile:
         return copy.profile;
     }
@@ -81,15 +84,7 @@ class _UserScaffoldState extends State<UserScaffold> {
     final currentTab = UserScaffoldTab.fromRouter(GoRouter.of(context));
     final copy = AppLocalizations.of(context)!;
     final items = [
-      AppScaffoldMenuItem(
-        title: copy.home,
-        selected: false,
-        onTap: () {
-          _scaffoldKey.currentState!.closeEndDrawer();
-          launchUrlString('https://www.myguide.art/');
-        },
-      ),
-      ...UserScaffoldTab.values.map((tab) {
+      UserScaffoldTab.values.map((tab) {
         return AppScaffoldMenuItem(
           title: tab.title(copy),
           selected: tab == currentTab,
@@ -112,7 +107,16 @@ class _UserScaffoldState extends State<UserScaffold> {
       },
     );
     final menu = AppScaffoldMenu(
-      items: items,
+      items:  UserScaffoldTab.values.map((tab) {
+        return AppScaffoldMenuItem(
+          title: tab.title(copy),
+          selected: tab == currentTab,
+          onTap: () {
+            _scaffoldKey.currentState!.closeEndDrawer();
+            context.go(tab.path);
+          },
+        );
+      }),
       roleChangeItem: roleChangeItem,
     );
     return defaultTargetPlatform.when(

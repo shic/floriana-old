@@ -1,6 +1,19 @@
 import 'package:myguide/pages/user/pages.dart';
 import 'package:myguide/routing/router.dart';
 
+class HomeRoute extends AppRoute {
+  static const rawPath = '/home';
+
+  static String route() => rawPath;
+
+  HomeRoute()
+      : super(
+          path: rawPath,
+          builder: (_, __) => const HomePage(),
+          routes: [HomeRoute()],
+        );
+}
+
 class ExhibitionListRoute extends AppRoute {
   static const rawPath = '/exhibitions';
 
