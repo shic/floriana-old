@@ -97,6 +97,7 @@ class ExhibitionDetailPage extends StatelessWidget {
                           Expanded(
                             child: Container(),
                           ),
+/*
                           Consumer(builder: (_, ref, __) {
                             final count =
                                 ref.watch(_exhLikeCountProvider(exhibition.id));
@@ -108,17 +109,21 @@ class ExhibitionDetailPage extends StatelessWidget {
                                   _exhibitionByIdProvider(exhibition.id)),
                             );
                           }),
+*/
                         ],
                       ),
                       const AppSpacer.xs(),
                       Consumer(
                         builder: (_, ref, __) {
+/*
                           final manager = ref
                               .watch(
                                 _managerByIdProvider(exhibition.managerId),
                               )
                               .asData;
-                          if (manager == null) return const SizedBox();
+*/
+                          if (true) return const SizedBox();
+                          final manager = null;
                           return Row(
                             children: [
                               if (manager.value.avatar?.isNotEmpty ?? true)
@@ -136,6 +141,7 @@ class ExhibitionDetailPage extends StatelessWidget {
                               if (manager.value.displayName?.isNotEmpty ??
                                   true) ...[
                                 const AppSpacer.s(),
+/*
                                 Expanded(
                                   child: Text(
                                     copy.organizedBy(
@@ -145,6 +151,7 @@ class ExhibitionDetailPage extends StatelessWidget {
                                     ),
                                   ),
                                 ),
+*/
                               ],
                             ],
                           );

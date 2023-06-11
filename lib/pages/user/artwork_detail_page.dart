@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -22,9 +21,9 @@ final _artworkByIdProvider =
 final _artworkLikeCount =
     StateProvider.family.autoDispose<int?, String>((ref, id) {
   return ref.watch(_artworkByIdProvider(id)).maybeWhen(
-    data: (artwork) => artwork?.likes,
-    orElse: () => null,
-  );
+        data: (artwork) => artwork?.likes,
+        orElse: () => null,
+      );
 });
 
 class ArtworkDetailPage extends StatelessWidget {
@@ -84,6 +83,7 @@ class ArtworkDetailPage extends StatelessWidget {
                       Row(
                         children: [
                           const Spacer(),
+/*
                           Consumer(builder: (_, ref, __) {
                             final count =
                                 ref.watch(_artworkLikeCount(artwork.id));
@@ -91,9 +91,11 @@ class ArtworkDetailPage extends StatelessWidget {
                             return FavoriteButton(
                               id: artwork.id,
                               count: count,
-                              onComplete: () => ref.refresh(_artworkByIdProvider(artwork.id)),
+                              onComplete: () =>
+                                  ref.refresh(_artworkByIdProvider(artwork.id)),
                             );
                           }),
+*/
                         ],
                       ),
                       const Divider(height: AppSize.l),
@@ -108,7 +110,9 @@ class ArtworkDetailPage extends StatelessWidget {
                           AuthorName(authorId: artwork.authorId),
                           if (creationInfoString != null)
                             DescriptiveText(
-                                title: copy.date, content: creationInfoString),
+                              title: copy.date,
+                              content: creationInfoString,
+                            ),
                           if (artwork.material != null)
                             DescriptiveText(
                               title: copy.material,

@@ -45,18 +45,43 @@ class ArtworkManagementController extends StateNotifier<ArtworkState>
 
   Future<Artwork?> getArtwork({String? id}) async {
     if (id == null) return null;
-    return dbService.doc(
-      path: '$collectionPath/$id',
-      converter: (id, map) => Artwork.fromMap({'id': id, ...?map}),
+    List<Artwork> artworkList = getArtworkDB();
+
+    final filtered = artworkList.firstWhere((element) => id == element.id);
+    return filtered;
+  }
+
+  List<Artwork> getArtworkDB() {
+    List<Artwork> artworkList = [];
+
+    artworkList.add(
+      const Artwork(
+        id: "11",
+        name: "11 name",
+        description: "11 description",
+        material: "11 material",
+        authorId: "Floriana Celani",
+        managerId: "managerId",
+        place: "place",
+        year: "year",
+        openSeaURL: "http://myguide.it/",
+        images: ["/assets/exhibition/1/1.jpeg"],
+        size: ArtworkSize(width: 55, height: 66),
+        status: ArtworkStatus.visible,
+        likes: 200,
+      ),
     );
+
+    return artworkList;
   }
 
   Future<Iterable<Artwork>> getArtworks({required List<String> ids}) async {
-    return dbService.collection(
-      path: collectionPath,
-      converter: (id, map) => Artwork.fromMap({'id': id, ...?map}),
-      where: [Where.documentIdWhereIn(target: ids)],
-    );
+    List<Artwork> artworkList = getArtworkDB();
+
+    final filtered =
+        artworkList.where((element) => ids.contains(element.id)).toList();
+
+    return filtered;
   }
 
   /// CRUD Operations

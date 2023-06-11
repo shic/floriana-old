@@ -1,4 +1,5 @@
 import 'package:collection/collection.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:myguide/core/features/authentication/all.dart';
 import 'package:myguide/core/features/exhibitions_management/domain.dart';
@@ -42,8 +43,34 @@ class UserExhibitionsController extends StateNotifier<ExhibitionState> {
       ],
     ).listen((event) {
       final data = event.where((e) => e.status == ExhibitionStatus.visible);
-      if (!mounted) return;
-      state = ExhibitionState.data(data);
+
+
+      Map<int, List<String>> dataByProvider = {
+        1: ['1', '2', '3']
+      };
+      Exhibition exhibition = Exhibition(
+        id: "1",
+        managerId: "1",
+        name: "ex name",
+        description: "ex description",
+        status: ExhibitionStatus.visible,
+        address: "address",
+        dateRange:
+        DateTimeRange(start: DateTime(2010), end: DateTime(2011)),
+        unavailableDates: const [],
+        workingHours: dataByProvider,
+        artworkIds: const ["11"],
+        likes: 100,
+        imageURL:"/assets/exhibition/1/0.jpeg",
+      );
+      final List<Exhibition> exhibitionList = [];
+
+      exhibitionList.add(exhibition);
+      exhibitionList.add(exhibition);
+      exhibitionList.add(exhibition);
+
+
+      state = ExhibitionState.data(exhibitionList.toList());
     });
   }
 
