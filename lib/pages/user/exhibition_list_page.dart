@@ -45,11 +45,11 @@ class ExhibitionListPage extends ConsumerWidget {
             address: "address",
             dateRange:
                 DateTimeRange(start: DateTime(2010), end: DateTime(2011)),
-            unavailableDates: [],
+            unavailableDates: const [],
             workingHours: dataByProvider,
             artworkIds: ["artworkIds"],
             likes: 100,
-              imageURL:"/",
+              imageURL:"/assets/exhibition/1/0.jpeg",
           );
           final List<Exhibition> exhibitionList = [];
 
