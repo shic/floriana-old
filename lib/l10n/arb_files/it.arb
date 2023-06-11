@@ -94,7 +94,7 @@
     "placeholders": {
       "money": {
         "example": "0",
-        "type": "double",
+        "type": "num",
         "format": "currency"
       }
     }

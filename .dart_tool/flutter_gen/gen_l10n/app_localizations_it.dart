@@ -254,12 +254,13 @@ class AppLocalizationsIt extends AppLocalizations {
     );
     final String moneyString = moneyNumberFormat.format(money);
 
-    return intl.Intl.pluralLogic(
+    String _temp0 = intl.Intl.pluralLogic(
       money,
       locale: localeName,
-      zero: 'Gratis',
       other: '$moneyString',
+      zero: 'Gratis',
     );
+    return '$_temp0';
   }
 
   @override

@@ -1,4 +1,0 @@
-#Fri Dec 16 16:50:12 CET 2022
-base.0=/Users/shi/Documents/workspaceMyguide/myguide/build/app/intermediates/dex/devRelease/minifyDevReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
